@@ -9,6 +9,6 @@ for line in lines:
 
 f = open('run.sh','w')
 for i in all_ids:
-  f.write( 'mkdir {} && rsync -avz --include="{}_180*" --include="{}_265*"	--include="{}_180*" --include="{}_265*" --exclude="*" 192.168.1.33:/home/vinhngo/data_41/ ./{} && echo 'done' '.format(i[0],i[0],i[0],i[1],i[1],i[0])
+  f.write( 'mkdir {} && rsync -avz --include="{}_180*" --include="{}_265*"	--include="{}_180*" --include="{}_265*" --exclude="*" 192.168.1.33:/home/vinhngo/data_41/ ./{} && echo "done" '.format(i[0],i[0],i[0],i[1],i[1],i[0])
   +'\n')
 ```
